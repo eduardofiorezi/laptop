@@ -90,10 +90,14 @@ tap 'heroku/brew'
 brew 'git'
 brew 'curl'
 brew 'openssl'
-brew 'yarn'
-brew 'openssl'
 brew 'bash-completion'
 brew 'bash-git-prompt'
+
+# Programming language prerequisites and package managers
+brew "libyaml" # should come after openssl
+brew "coreutils"
+brew "yarn"
+cask "gpg-suite"
 
 # Heroku
 brew 'heroku/brew/heroku'
